@@ -158,3 +158,15 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2021-08-26 03:33:51.581
 !MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/thymeleaf/thymeleaf-extras-eclipse-plugin/update-site/2.1.2/content.jar
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-26 03:47:06.924
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JHdMPnXh
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-26 03:47:06.925
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.JHdMPnXh
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-26 03:47:06.926
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-26 03:47:06.926
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JHdMPnXh => OK
