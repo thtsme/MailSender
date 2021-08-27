@@ -14,6 +14,8 @@ export class EmailComponent implements OnInit {
     message:""
   }
 
+  flag:boolean=false;
+
   constructor(private email:EmailService, private snack:MatSnackBar) { }
 
   ngOnInit(): void {
@@ -25,14 +27,17 @@ export class EmailComponent implements OnInit {
       this.snack.open("fields can not be empty !!","OK")
       return ;
     }
+    this.flag=true;
     this.email.sendEmail(this.data).subscribe(
       response=>{
         console.log(response);
-        
+        this.flag=false
+        this.snack.open("Send Success","OK")
       },
       error=>{
         console.log(error);
-        
+        this.flag=false
+        this.snack.open("ERROR !! Please check and try again","OK")
       }
     )
   }
