@@ -14,6 +14,8 @@ import { EmailComponent } from './email/email.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { EmailService } from './service/email.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -34,8 +36,9 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    HttpClientModule
   ],
-  providers: [MatSnackBar],
+  providers: [MatSnackBar,EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

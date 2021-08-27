@@ -40,7 +40,7 @@ public class EmailService {
 
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("mujahedshaikh404@gmail.com", "*******");
+				return new PasswordAuthentication("mujahedshaikh404@gmail.com", "********");
 			}
 		});
 		session.setDebug(true);
